@@ -13,7 +13,8 @@
 <script language="javascript" type="text/javascript" src="animate.js"> </script>
 <script>
 //animazioni
-var arrayel= new Array(new AnimateElement('#work', 'fadeInRight'), new AnimateElement('#education', 'fadeInRight'), new AnimateElement('#thesis', 'fadeInRight')
+var arrayel= new Array(new AnimateElement('#work', 'fadeInRight'), new AnimateElement('#education', 'fadeInRight'), new AnimateElement('#thesis', 'fadeInRight'),
+			new AnimateElement('#last_projects', 'fadeInRight')
  );
 var m=new AnimateClass(arrayel);
 $(window).scroll(m.animate );
@@ -127,7 +128,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
 	  
-	   <div id="thesis" class="w3-container w3-card w3-white animated" style="opacity:0;">
+	   <div id="thesis" class="w3-container w3-card w3-white animated w3-margin-bottom" style="opacity:0;">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Tesi</h2>
 		<h3 class="w3-text-grey">Ottimizzazione dei trasporti</h3>
        <p>
@@ -137,7 +138,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 			<a href="tesi.pdf" target="_blank">Visualizza tesi</a>
 	   </p>
       </div>
-
+	  
+	 <div id="last_projects" class="w3-container w3-card w3-white animated" style="opacity:0;">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-futbol-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Ultimo progetto</h2>
+		<h3 class="w3-text-grey">Sito società sportiva France Sport</h3>
+       <p>
+			Sito della società sportiva in cui gioco e alleno.
+	   </p>
+	   <p>
+			<a href="http://www.francesport.it/" target="_blank">Visualizza sito</a>
+	   </p>
+      </div>
     <!-- End Right Column -->
     </div>
     
