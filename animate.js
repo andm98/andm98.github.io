@@ -4,12 +4,12 @@ function AnimateClass(array_el){
 		this.arrayel = arrayel;
 		this.animate=function(){
 			var i;
-			for(i=0; i<arrayel.length;i++)
-			$(arrayel[i].name_el).each(function() {
-				if (isScrolledIntoView(this) === true) {
-					$(this).addClass(arrayel[i].name_effect);
+			for(i=0; i<arrayel.length;i++){
+				let el=$(arrayel[i].name_el);
+				if (isScrolledIntoView(el) === true){
+					el.addClass(arrayel[i].name_effect);
 				}
-			});
+			}
 		}
 }
 
