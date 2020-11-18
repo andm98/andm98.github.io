@@ -5,10 +5,11 @@ function AnimateClass(array_el){
 		this.animate=function(){
 			var i;
 			for(i=0; i<arrayel.length;i++){
-				let el=$(arrayel[i].name_el);
-				if (isScrolledIntoView(el) === true){
-					el.addClass(arrayel[i].name_effect);
+				let el=$(arrayel[i].name_el).children().first();
+				if (isScrolledIntoView(el) === true) {
+					$(arrayel[i].name_el).addClass(arrayel[i].name_effect);
 				}
+	
 			}
 		}
 }
